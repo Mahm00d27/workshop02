@@ -10,8 +10,10 @@ knitr::opts_chunk$set(
 options(repos=structure(c(CRAN="http://cran.r-project.org")))
 
 
-## ----install_pkgs, eval = FALSE-----------------------------------------------
-## install.packages(c('dplyr', 'tidyr', 'magrittr'))
+## ----install_pkgs, echo = FALSE, results = "asis"-----------------------------
+cat(
+  qcbsRworkshops::first_slides(2, c('dplyr', 'tidyr', 'magrittr'))
+)
 
 
 ## ---- eval = FALSE------------------------------------------------------------
